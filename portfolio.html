@@ -1,85 +1,147 @@
-<!-- Basic-Portfolio/portfolio.html -->
+<!-- Bootstrap-Portfolio/portfolio.html -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Jeffrey (Jeff) Miller </title>
-    <style></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+    <style>
+    .my-container {
+        /* width:960px; */
+        margin: 0 auto;
+        background:#ffffff;
+        border-style:solid;
+        border-color:#dddddd;
+        border-width: thick;
+        padding-bottom: 10px;
+    }
+
+    .my-navbar{
+        background-color:#4aaaa5;
+        /* width:960px; */
+        /* margin: 0 auto; */
+    }
+
+    .my-nav-items{
+        margin-right: 20px;
+    }
+    
+    .about-me-header {
+        color:#4aaaa5;
+    }
+
+    .my-picture {
+        /* width: 200px; */
+        /* height: 200px; */
+        /* margin-top:20px; */
+        /* margin-bottom:10px; */
+        /* margin-right: 20px; */
+        /* margin-left:20px; */
+        /* float:left; */
+}
+
+.about-me-header {
+    margin-right:20px;
+    margin-left: 20px;
+    color:#4aaaa5;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #777777;
+    color: white;
+    text-align: center;
+}
+
+.portfolio-labels {
+    /* float:left; */
+    text-align: center;
+    background-color:#4aaaa5;
+    color:white;
+    font-weight:bold;
+    position: relative;
+    left: 2px;
+    right: 0;
+    bottom: 100px;
+    top: -60px;
+    height: 50px;
+    width: 100%;
+}
+    </style>
+
+<title>Jeffrey (Jeff) Miller </title>
+
 </head>
 
 <body>
 
-    <div id="container">
-        <section id="nav-bar">
-            <div id="name-box">
-                <div id="name">
-                    <h3>Jeffrey Miller</h3>
+    <nav class="navbar navbar-expand-xs fixed-top my-navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <span class="navbar-brand">Jeffrey Miller</span>
+                </div>
+                <ul class="nav navbar-nav navbar-right my-nav-items">
+                    <li class="navbar-item"><a href="index.html" class="nav-link">About</a></li>
+                    <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact</a></li>
+                    <li class="navbar-item"><a href="portfolio.html" class="navbar-link">Portfolio</a></li>      
+                </ul>
+            </div>
+    </nav>
+
+    <div class="container my-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="about-me-header">Portfolio</h2>
                 </div>
             </div>
-            <div id="nav-box">
-                <!-- <div id="nav-links"></div> -->
-                <a href="index.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="portfolio.html">Portfolio</a>
-                <!-- <div id="nav-buttons">Nav buttons go here</div> -->
-            </div>
-        </section>
-        <!-- </div> -->
-        <div id="main">
-            <div id="portfolio-container">
-                <header id="about-me-header">
-                    <h2>Portfolio</h2>
-                    <hr>
-                </header>
-                <div id="portfolio-items">
-                    <div class="pic-pair">
-                        <div class="portfolio-labels">
-                            Item 1
-                            <!-- <div class="item">Item 1</div>                               -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                
+                                <img class="img-thumbnail float-left my-picture" src="Images\technics-q-c-640-480-1.jpg" alt="Portfolio Item-1">
+                                Portfolio Item 1
+
+                            </div>
+                            <div class="col-md-4">
+                            <img class="img-thumbnail float-right my-picture" src="Images\technics-q-c-640-480-2.jpg" alt="Portfolio Item-1">
+                                Portfolio Item 2
                         </div>
-                        <img class="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-1">
-
-
-                        <!-- <img id="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-2">
-                        <img id="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-3">
-                        <img id="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-4"> -->
-                    </div>
-                    <div class="pic-pair">
-                        <div class="portfolio-labels">
-                            Item 2
-                            <!-- <div class="item">Item 1</div>                               -->
                         </div>
-                        <img class="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-2">
 
-
-                        <!-- <img id="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-2">
-                        <img id="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-3">
-                        <img id="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-4"> -->
-                    </div>
-                    <div class="pic-pair">
-                        <div class="portfolio-labels">
-                            Item 3
-                            <!-- <div class="item">Item 1</div>                               -->
+                        <div class="row">
+                                <div class="col-md-4">
+                                <img class="img-thumbnail float-left my-picture" src="Images\technics-q-c-640-480-5.jpg" alt="Portfolio Item-1">
+                                Portfolio Item 3
+                                </div>   
+                                 <div class="col-md-4">
+                                <img class="img-thumbnail float-right my-picture" src="Images\technics-q-c-640-480-7.jpg" alt="Portfolio Item-1">
+                                Portfolio Item 4
+                                </div>
                         </div>
-                        <img class="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-3">
 
-
-                        <!-- <img id="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-2">
-                        <img id="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-3">
-                        <img id="my-picture" src="Images/Desert.jpg" alt="Portfolio Item-4"> -->
-                    </div>
-                    <!-- <div class="portfolio-labels"> -->
-                    <!-- <div class="item">Item 1</div> -->
-
+                        <div class="row">
+                                <div class="col-md-4">
+                                <img class="img-thumbnail float-left my-picture" src="Images\Desert.jpg" alt="Portfolio Item-1">
+                                Portfolio Item 5
+                                </div>   
+                        </div>
                 </div>
             </div>
         </div>
-        <section id="footer">
-            <div id="footer-text"><h6>Basic-Portfolio</h6></div>
-        </section>
+        <div class="row">
+                <div class="col">
+                    <footer class="footer font-small blue pt-4">
+                    <div class="footer-copyright text-center py-3">© 2018 Copyright:</div>
+                    </footer>
+                    </div>
+            </div>
+
     </div>
 </body>
 </html>
